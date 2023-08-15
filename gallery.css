@@ -1,0 +1,114 @@
+/* gallery starts */
+
+.gallery
+{
+    border: 2px solid white;
+    background-color: white;
+    height: 1000px;
+}
+
+.gallery .All
+{
+    /* border: 2px solid green; */
+    height: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.gallery .All a
+{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(100, 99, 99);
+
+}
+
+.gallery .All a:hover 
+{
+    color: #006fbe;
+}
+
+.pics
+{
+    display: flex;
+    flex-direction: row;
+}
+.P1
+{
+    height: 300px;
+    width: 400px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+}
+/* 
+.P1{
+    position: absolute;
+    top: 356px;
+    left: 640px;
+} */
+
+.P1 img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.cover
+{
+    background-color: rgba(0, 0, 0, 0.459);
+    height: 90%;
+    width: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .5s;
+
+}
+
+.P1:hover .cover
+{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.cover::before
+{
+    content: "";
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    right: 130px;
+    top: -40px;
+    
+}
+
+.cover::after
+
+{
+    content: "";
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    left: 130px;
+    bottom: -40px;
+}
+
+
+
+
+/* gallery ends */
